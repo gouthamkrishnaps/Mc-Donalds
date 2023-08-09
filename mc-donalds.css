@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+}
+.background-image{
+    position: relative;
+    background-image: url('https://c1.wallpaperflare.com/preview/192/772/24/mcdonalds-ronald-joker-heath-ledger.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.blur-background{
+    height: 100vh;
+	width: 100%;
+    background: rgba(0, 0, 0, 0.374);
+    backdrop-filter: blur(5px)
+}
+.container{
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.234);
+}
+#content_name{
+    font-size: 30px;
+    color: rgb(255, 242, 0);
+    margin-top: 10px;
+}
+.sections_name{
+    display: inline-block;
+    padding: 20px;
+    margin: 1px 10px;
+}
+.sections_name:hover a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 225, 2);
+}
+.sections_name a{
+    color: white;
+    text-decoration: none;
+    margin: 20px 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 18%;
+}
+.quote0{
+    font-size: 30px;
+}
+.quote1{
+    font-size: 60px;
+    font-weight: bold; 
+    margin-bottom: 40px;
+    color: yellow;
+    animation: fadeIn 5s infinite;
+}
+@keyframes fadeIn{
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+}
+.buttons{
+    padding: 20px;
+    margin: 20px;
+}
+.mapbutton{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(39, 38, 38, 0.321);
+    border-color: yellow;
+    padding: 4px 15px;
+    border-radius: 30px;
+    box-shadow: 1px 4px 4px 1px rgb(0, 0, 0);
+    border-style: groove;
+    border-width: 1px;
+}
+.mapbutton:hover{
+    background-color: yellow;
+    color: black;
+    transition: 1s;
+}
+.menus{
+    margin: 0px 30px;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+.heading span{
+    font-size: 20px;
+    color: rgb(4, 255, 0);
+}
+.item_name{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.items_container{
+    overflow-y: hidden;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+.items{
+    width: 25%;
+    height: 100%;
+}
+.label{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 35px;
+}
+.item_name{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.item_name:hover{
+    color: rgb(81, 255, 0);
+}
+.items img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    margin-left: 35px;
+    --s: 300px;
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: var(--s) solid rgba(0, 0, 0, 0.427);
+    outline-offset: calc(var(--s)/-2);
+    clip-path: inset(2% round 60px);
+    transition: .7s;        
+}
+.items img:hover{
+    outline-offset: 0;
+}
+.price{
+    font-size: 20px;
+    text-decoration: line-through solid red;
+}
+.offer-price{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+.offer-container{
+    display: flex;
+    gap: 1rem;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 400px;
+}
+.offer-image{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.offer-image img{
+    border-radius: 20px;
+    width: 70%;
+    height: 99%;
+    margin-left: 40px;
+} 
+.offer-desc{
+    width: 90%;
+    
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+.offer-buttons-right{
+    padding: 20px;
+    margin: 30px 0px 0px 10px;
+}
+.offer-buttons-left{
+    padding: 20px;
+    margin: 30px 0px 0px 430px;
+}
+.buy-cart-button{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(255, 123, 0);
+    padding: 2px 7px;
+    border-style: double;
+    border-radius: 20px;
+}
+.buy-cart-button:hover{
+    background-color: yellow;
+    transition: 300ms;
+}
+.price-right{
+    font-weight: bold;
+    
+    font-size: 30px;
+    margin: 30px 0px 0px 10px;
+}
+.price-left{
+    font-weight: bold;
+    
+    font-size: 30px;
+    margin: 30px 0px 0px 430px;
+}
+.orgi-price{
+    text-decoration: line-through red;
+}
+.footer-container{
+    padding: 35px 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+}
+.about-part{
+    padding: 30px;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.footer-desc{
+    font-size: 10px;
+    padding: 35px;
+    margin-top: 60px;
+}
+.about-heading{
+    font-weight: bolder;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media_icons,.gototop{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+}
+
+.icon:hover{
+    font-size: 20px;
+    transition: 500ms;
+}
